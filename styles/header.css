@@ -1,0 +1,17 @@
+.header{
+    @apply flex justify-center bg-purple-700 h-12;
+}
+.wrapper{
+    @apply container flex justify-between;
+}
+.left{
+    @apply inline-flex items-end gap-4;
+}
+
+.left a {
+    @apply text-yellow-400 bg-purple-500 px-3 pb-2 pt-2 rounded-t-lg;
+}
+
+.right{
+    @apply flex items-center justify-center;
+}
