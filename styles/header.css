@@ -1,17 +1,29 @@
-.header{
-    @apply flex justify-center bg-purple-700 h-12;
+/* TODO: Change colors with originally colors */
+
+.header {
+  @apply flex justify-center bg-purple-700 h-12;
+  background-color: rgb(93, 62, 188);
+  height: 45px;
 }
-.wrapper{
-    @apply container flex justify-between;
+.wrapper {
+  @apply container flex justify-between w-2/3;
 }
-.left{
-    @apply inline-flex items-end gap-4;
+.left {
+  @apply inline-flex items-end gap-4 font-bold;
 }
 
 .left a {
-    @apply text-yellow-400 bg-purple-500 px-3 pb-2 pt-2 rounded-t-lg;
+  @apply text-yellow-400 bg-purple-500 px-3 pb-2 pt-2 rounded-t-lg;
 }
 
-.right{
-    @apply flex items-center justify-center;
+.right {
+  @apply flex items-center justify-center gap-2;
+}
+
+.svg--icon {
+  @apply h-5 w-5;
+}
+
+.icon--button {
+  @apply flex items-center gap-1 text-gray-300;
 }

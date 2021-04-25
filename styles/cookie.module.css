@@ -1,0 +1,26 @@
+.wrapper {
+  @apply w-full absolute bottom-0 left-0 
+  bg-gray-900 bg-opacity-90 
+  flex justify-center items-center;
+}
+
+.cookie {
+  @apply container w-2/3 flex justify-between items-center;
+  @apply flex justify-between items-center;
+  @apply my-6 mx-auto;
+}
+
+.title {
+  @apply text-white text-xs max-w-4xl;
+}
+
+.cookieSetting {
+  @apply text-sm font-semibold underline ml-1 hover:text-yellow-400;
+}
+
+.button {
+  @apply bg-blue-500 text-white;
+  @apply rounded-lg;
+  @apply px-4 py-2;
+  @apply transition-colors hover:bg-purple-600;
+}

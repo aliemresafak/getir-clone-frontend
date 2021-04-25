@@ -1,0 +1,31 @@
+.categories {
+  @apply grid grid-cols-10 gap-4 relative;
+}
+
+.categoryItem {
+  @apply inline-flex flex-col justify-center items-center rounded-lg py-5;
+  @apply hover:bg-purple-600 hover:bg-opacity-10;
+}
+
+.categoryWrapper {
+  @apply container w-2/3 m-auto;
+  @apply mt-10;
+}
+
+.imageWrapper {
+  @apply h-12 w-12;
+  @apply inline-flex flex-col justify-center items-center;
+}
+
+.image {
+  @apply h-full w-full object-cover;
+  @apply border border-solid border-gray-300 rounded-lg;
+}
+
+.categoryItemImage {
+  @apply h-12 w-12;
+}
+
+.categoryItemTitle {
+  @apply font-semibold text-sm mt-3 text-gray-800;
+}

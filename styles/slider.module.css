@@ -1,0 +1,59 @@
+.slider {
+  @apply w-full flex justify-around items-center px-12 bg-gradient-to-r from-purple-800 to-purple-300;
+  height: 500px;
+}
+
+.left {
+  @apply flex flex-col gap-5;
+  width: 350px;
+}
+
+.leftLogo {
+  @apply h-40 w-40;
+}
+
+.right {
+  @apply flex flex-col items-center bg-white rounded-md px-3 py-5;
+  width: 400px;
+}
+
+.authTitle {
+  @apply text-purple-700 font-bold;
+}
+
+.phoneSection {
+  @apply flex flex-col items-center border-b pb-5 w-full;
+}
+
+.phoneInputGroup {
+  @apply inline-flex w-full mt-3 mb-5 gap-3;
+}
+
+.phoneInputGroup > input,
+.phoneInputGroup > select {
+  @apply px-2 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-purple-600;
+}
+
+.phoneInputGroup > input {
+  @apply w-full outline-none;
+}
+
+.phoneButton {
+  @apply text-purple-700 bg-yellow-400 px-2 py-3 w-full text-center rounded-md transition ease-in-out font-semibold text-sm hover:bg-purple-700 hover:text-yellow-400;
+}
+
+.social {
+  @apply flex flex-col pt-5 w-full;
+}
+
+.socialIcon {
+  @apply h-10 w-10;
+}
+
+.socialButton {
+  @apply flex justify-start items-center w-full rounded-md p-3 bg-gray-200 text-blue-900;
+}
+
+.socialTitle {
+  @apply m-auto w-full text-center;
+}

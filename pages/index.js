@@ -1,14 +1,20 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Categories from "../components/Category/Categories";
+import Cookie from "../components/Cookie";
 import Header from "../components/Header";
+import Slider from "../components/Slider";
 
 export default function Home() {
   return (
-    <div className=''>
+    <div>
       <Head>
         <title>Getir Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Header />
+      <Header />
+      <Slider />
+      <Categories />
+      <Cookie />
     </div>
-  )
+  );
 }
