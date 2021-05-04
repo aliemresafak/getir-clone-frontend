@@ -1,5 +1,5 @@
 .wrapper {
-  @apply w-full absolute bottom-0 left-0 
+  @apply w-full fixed  bottom-0 left-0 
   bg-gray-900 bg-opacity-90 
   flex justify-center items-center;
 }
