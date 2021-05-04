@@ -1,18 +1,46 @@
+import { useState } from "react";
+import styles from "../styles/header.module.css";
+import Link from "next/link";
 export default function Header() {
-  // TODO: Renk kodlari ve css'ler module.css seklinde yapilacak. css style conflictler yasaniyor bu sekilde
+  const [activaElementName, setActiveElementName] = useState("getir");
+
+  // sadece burasi icin method olusturmana gerek yoktu ama sen bilirsin...
+
+  const clickAction = (tag) => {
+    setActiveElementName(tag);
+  };
+
   return (
-    <header className="header">
-      <div className="wrapper">
-        <div className="left">
-          <a href="#">getir</a>
-          <a href="#">getiryemek</a>
-          <a href="#">getirbüyük</a>
+    <header className={styles.header}>
+      <div className={styles.wrapper}>
+        <div className={styles.left}>
+          <a
+            href="#"
+            className={activaElementName == "getir" ? styles.active : ""}
+            onClick={() => clickAction("getir")}
+          >
+            getir
+          </a>
+          <a
+            className={activaElementName == "getiryemek" ? styles.active : ""}
+            href="#"
+            onClick={() => clickAction("getiryemek")}
+          >
+            getiryemek
+          </a>
+          <a
+            className={activaElementName == "getirbuyuk" ? styles.active : ""}
+            href="#"
+            onClick={() => clickAction("getirbuyuk")}
+          >
+            getirbüyük
+          </a>
         </div>
-        <div className="right">
-          <a href="#" className="icon--button">
+        <div className={styles.right}>
+          <a href="#" className={styles.iconButton}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="svg--icon"
+              className={styles.svgIcon}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -26,10 +54,10 @@ export default function Header() {
             </svg>
             Türkçe (TR)
           </a>
-          <a href="#" className="icon--button">
+          <a href="#" className={styles.iconButton}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="svg--icon"
+              className={styles.svgIcon}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -43,10 +71,10 @@ export default function Header() {
             </svg>
             Giriş Yap
           </a>
-          <a href="#" className="icon--button">
+          <a href="#" className={styles.iconButton}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="svg--icon"
+              className={styles.svgIcon}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
