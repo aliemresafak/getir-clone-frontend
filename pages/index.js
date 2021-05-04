@@ -3,6 +3,7 @@ import Categories from "../components/Category/Categories";
 import Cookie from "../components/Cookie";
 import Header from "../components/Header";
 import Slider from "../components/Slider";
+import Favorite from "../components/Favorite/Favorite";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <Slider />
       <Categories />
+      <Favorite />
       <Cookie />
     </div>
   );
