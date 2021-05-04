@@ -1,0 +1,9 @@
+.wrapper {
+  @apply container my-5;
+  @apply grid grid-cols-8 grid-rows-2 mx-auto;
+}
+
+.item {
+  @apply flex flex-col items-center justify-center;
+  @apply border;
+}
