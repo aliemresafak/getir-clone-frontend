@@ -1,0 +1,23 @@
+.instructionList {
+  @apply inline-flex justify-between gap-3 mt-8 min-w-full;
+}
+
+.instruction {
+  @apply flex-1 flex-col items-center flex-wrap gap-4 w-auto p-5 py-16;
+  @apply border-none rounded-lg shadow-sm;
+  @apply text-center bg-white;
+}
+
+.wrapper {
+  @apply flex flex-col items-center gap-4;
+}
+
+.title {
+  @apply font-semibold text-lg;
+  color: #5d3ebc;
+}
+
+.subtitle {
+  color: #687488;
+  @apply text-sm;
+}
