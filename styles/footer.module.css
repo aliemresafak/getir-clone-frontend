@@ -1,0 +1,20 @@
+.footer {
+  @apply container mx-auto h-52 w-2/3 my-10;
+}
+
+.wrapper {
+  @apply inline-flex justify-between items-center gap-3 w-full h-full;
+}
+
+.column {
+  @apply flex flex-col items-start gap-3 h-full;
+}
+
+.title {
+  @apply text-xl tracking-wide;
+  color: #5d3ebc;
+}
+
+.submenu {
+  @apply flex flex-col items-start justify-start gap-2;
+}
