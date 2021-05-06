@@ -1,0 +1,20 @@
+.wrapper {
+  @apply flex justify-between items-center mt-6 rounded-md pt-6 pl-12;
+  background-color: #5d3ebc;
+}
+
+.images {
+  @apply inline-flex gap-4 mt-5;
+}
+
+.left {
+  @apply flex flex-col text-white gap-3;
+}
+
+.left h1 {
+  @apply text-4xl font-semibold;
+}
+
+.left h5 {
+  @apply text-lg font-medium;
+}
