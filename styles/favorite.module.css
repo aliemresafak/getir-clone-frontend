@@ -1,9 +1,39 @@
 .wrapper {
-  @apply container my-5;
   @apply grid grid-cols-8 grid-rows-2 mx-auto;
 }
 
 .item {
-  @apply flex flex-col items-center justify-center;
-  @apply border;
+  @apply flex flex-col items-center justify-center relative;
+  @apply py-3 px-2 bg-white;
+  @apply border-r border-b rounded-sm border-gray-100;
+}
+
+.image {
+  @apply m-0 inline-flex;
+  height: 120px;
+  width: 120px;
+}
+
+.image img {
+  @apply object-cover h-full w-full;
+}
+
+.add {
+  @apply absolute top-5 right-5 px-2 py-1 border rounded-md bg-white;
+  color: #5d3ebc;
+}
+
+.price {
+  @apply font-semibold text-sm;
+  color: #5d3ebc;
+}
+
+.title {
+  @apply font-semibold text-sm text-center;
+  color: #191919;
+}
+
+.basisWeight {
+  @apply text-sm;
+  color: #697488;
 }
