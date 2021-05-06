@@ -91,11 +91,26 @@ export default function Categories() {
   ];
 
   return (
-    <div className={style.categoryWrapper}>
-      <div className={style.categories}>
-        {products.map((item) => (
-          <CategoryItem product={item} />
-        ))}
+    // TODO: Shadow vermek icin css'i asagidaki yapi icin duzenle
+
+    // <div className="wrapper">
+    //   <div className="container">
+    //     <div className="categories">
+    //       {products.map((item) => (
+    //         <CategoryItem product={item} />
+    //       ))}
+    //     </div>
+    //   </div>
+    // </div>
+
+    // TODO: padding-top ve padding-bottom esit degil bi goz at
+    <div className="w-screen h-full">
+      <div className={style.categoryWrapper}>
+        <div className={style.categories}>
+          {products.map((item) => (
+            <CategoryItem product={item} />
+          ))}
+        </div>
       </div>
     </div>
   );

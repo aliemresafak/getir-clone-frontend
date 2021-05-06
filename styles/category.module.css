@@ -1,3 +1,8 @@
+.categoryWrapper {
+  @apply container w-2/3 m-auto;
+  @apply mt-10;
+}
+
 .categories {
   @apply grid grid-cols-10 gap-4 relative;
 }
@@ -5,11 +10,6 @@
 .categoryItem {
   @apply inline-flex flex-col justify-center items-center rounded-lg py-5;
   @apply hover:bg-purple-600 hover:bg-opacity-10;
-}
-
-.categoryWrapper {
-  @apply container w-2/3 m-auto;
-  @apply mt-10;
 }
 
 .imageWrapper {
